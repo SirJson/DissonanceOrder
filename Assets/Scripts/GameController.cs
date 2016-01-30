@@ -261,20 +261,45 @@ public class GameController : MonoBehaviour {
 		return MeasurePolygon(elems,new List<float>() {(float)0,(float)0,(float)Math.PI});
 	}
 
+    private List<GameObject> elemGameObjects;
+    private Hotspot[] hotspots;
+    private RuleFn[] rules;
+
     // Use this for initialization
     void Start () {
-		RuleFn[] rules = new RuleFn[] { somerule,perfectTriangleRule,threeInLineRule,squareRule };
+        {
+            // collect elements
+            GameObject parent = GameObject.Find("ElementContainer");
+            elemGameObjects = new List<GameObject>();
+            foreach (Transform child in parent.transform) {
+                elemGameObjects.Add(child.gameObject);
+            }
+        }
 
-        Hotspot[] hotspots = new Hotspot[] { new CircleHotspot(new Vector2(0, 0), 5) };
+        {
+            // collect hotspots
+            GameObject parent = GameObject.Find("HotspotContainer");
+            List<GameObject> hotspotGameObjects = new List<GameObject>();
+            foreach (Transform child in parent.transform) {
+                hotspotGameObjects.Add(child.gameObject);
+            }
 
-        List<Element> elems = new List<Element>();
-        elems.Add(new Element((int)ELEMENT.ONE, new Vector2(4.9f, 0)));
+            hotspots = new Hotspot[hotspotGameObjects.Count];
+            for (int i = 0; i < hotspotGameObjects.Count; i++) {
+                hotspots[i] = new CircleHotspot(hotspotGameObjects[i].transform.position, 5);
+            }
+        }
 
-        Debug.Log(getGroups(hotspots, rules, elems)[0].distance);
+        rules = new RuleFn[] { somerule,perfectTriangleRule,threeInLineRule,squareRule };
 	}
 
 	// Update is called once per frame
 	void Update () {
+        List<Element> elems = new List<Element>(elemGameObjects.Count);
+        for (int i = 0; i < elemGameObjects.Count; i++) {
+            elems.Add(new Element(0, elemGameObjects[i].transform.position));
+        }
 
+        //Debug.Log(getGroups(hotspots, rules, elems)[0].distance);
 	}
 }

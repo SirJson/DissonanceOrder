@@ -17,7 +17,7 @@ public class Hotspot : MonoBehaviour
         	var dist = (Vector2.Distance(Tone.transform.position, transform.position) - 0.1f)*10;
 		Debug.DrawLine(transform.position,Tone.transform.position,Color.green);
         	if(dist < 0) dist = 0;
-		Debug.Log(dist);
+		//Debug.Log(dist);
 		toneGenerator.Frequency = toneGenerator.BaseFrequency + (dist * dist);
 	}
 	
