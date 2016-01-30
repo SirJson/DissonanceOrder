@@ -31,7 +31,7 @@ public class Tracker : MonoBehaviour
 	void PlayNextAccord()
 	{
 		StopAccord();
-		//Bars[accordIdx].Play();
+		Bars[accordIdx].Play();
 		accordIdx++;
 		if(accordIdx >= Bars.Length) accordIdx = 0;
 	}
@@ -40,7 +40,7 @@ public class Tracker : MonoBehaviour
 	{
 		var prevAccordIdx = accordIdx - 1;
 		if(prevAccordIdx <= -1) prevAccordIdx = Bars.Length - 1;
-		//Bars[prevAccordIdx].Stop();
+		Bars[prevAccordIdx].Stop();
 	}
 
 }
