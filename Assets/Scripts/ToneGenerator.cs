@@ -14,18 +14,28 @@ public class ToneGenerator : MonoBehaviour
 {
 	// un-optimized version
 	public double Frequency = 440;
+	public double BaseFrequency;
 	public int Note = 0;
 	public double Gain = 0.05;
+	public bool Noise = false;
 	public SignaleType Type;
 
 	private double phase;
 	private double sampling_frequency = 48000;
 	private double blah = 0;
+	private System.Random random;
+	private float test;
 
 	void Start()
 	{
-		Frequency = Frequency * Math.Pow(Math.Pow(2.0,1.0/12.0),Note);	
+		random = new System.Random();
+		Frequency = Frequency * Math.Pow(Math.Pow(2.0,1.0/12.0),Note);
+		BaseFrequency = Frequency;
 		sampling_frequency = AudioSettings.outputSampleRate;
+	}
+
+	void Update()
+	{
 	}
 
 	void GenerateSin(ref float[] data, int channels, double t)
