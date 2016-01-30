@@ -29,6 +29,8 @@ public class ToneGenerator : MonoBehaviour
 	void Start()
 	{
 		random = new System.Random();
+		Frequency = Game.DefaultFrequence;
+		Type = Game.DefaultSignal;
 		Frequency = Frequency * Math.Pow(Math.Pow(2.0,1.0/12.0),Note);
 		BaseFrequency = Frequency;
 		sampling_frequency = AudioSettings.outputSampleRate;
@@ -96,6 +98,12 @@ public class ToneGenerator : MonoBehaviour
 			if (channels == 2) data[i + 1] = data[i];
 			if (phase > 32768 * Math.PI) phase = 0;
 		}
+	}
+
+	public void SetFrequency(double freq)
+	{
+		Frequency = freq * Math.Pow(Math.Pow(2.0,1.0/12.0),Note);
+		BaseFrequency = Frequency;
 	}
 
 
