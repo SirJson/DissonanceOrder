@@ -22,6 +22,7 @@ public class Hotspot : MonoBehaviour
 		Debug.DrawLine(transform.position,Tone.transform.position,Color.green);
         	if(dist < 0) dist = 0;
         	Valid = toneGenerator.Frequency == toneGenerator.BaseFrequency;
+		//Debug.Log(dist);
 		toneGenerator.Frequency = toneGenerator.BaseFrequency + (dist * dist);
 	}
 	
