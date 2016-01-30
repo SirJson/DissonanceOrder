@@ -10,6 +10,7 @@ public class Hotspot : MonoBehaviour
 	private ToneGenerator toneGenerator;
 	private AudioSource toneSource;
     	public bool Valid;
+        public bool Completed;
 	
 	// Use this for initialization
 	void Start () {
@@ -18,11 +19,12 @@ public class Hotspot : MonoBehaviour
 	void Update()
 	{
 		if(toneSource == null) return;
-        	var dist = (Vector2.Distance(Tone.transform.position, transform.position) - 0.1f)*10;
+        var dist = (Vector2.Distance(Tone.transform.position, transform.position))*10;
 		Debug.DrawLine(transform.position,Tone.transform.position,Color.green);
-        	if(dist < 0) dist = 0;
-        	Valid = toneGenerator.Frequency == toneGenerator.BaseFrequency;
-		//Debug.Log(dist);
+        if(dist < 3) dist = 0;
+        Valid = tone != null;
+        Completed = dist == 0 && !tone.Dragging;
+		Debug.Log(dist);
 		toneGenerator.Frequency = toneGenerator.BaseFrequency + (dist * dist);
 	}
 	
@@ -42,6 +44,18 @@ public class Hotspot : MonoBehaviour
 
 		toneSource.Stop();
 	}
+    
+    public void SetGreen()
+    {
+        if(tone == null) return;
+        tone.SetGreen();
+    }
+    
+    public void SetWhite()
+    {
+        if(tone == null) return;
+        tone.SetWhite();
+    }
 
 	void OnTriggerEnter2D(Collider2D other) {
 		if(other.gameObject.layer == (int)LayerID.Tone && other.gameObject == Tone)

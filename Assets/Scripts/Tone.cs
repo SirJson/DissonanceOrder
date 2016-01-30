@@ -8,6 +8,11 @@ public class Tone : MonoBehaviour
 	public AudioMixerGroup MasterGroup, HighlightedGroup;
     private DragableObject obj;
     
+    public bool Dragging
+    {
+        get { return obj.Dragging; }
+    }
+    
 	// Use this for initialization
 	void Start () {
 	   obj = GetComponent<DragableObject>();
@@ -44,5 +49,15 @@ public class Tone : MonoBehaviour
 		iTween.PunchScale(gameObject, Vector3.one, 1.0f);
 		
 	}
+    
+    public void SetGreen()
+    {
+        GetComponent<SpriteRenderer>().color = Color.green;
+    }
+    
+    public void SetWhite()
+    {
+        GetComponent<SpriteRenderer>().color = Color.white;
+    }
 }
 

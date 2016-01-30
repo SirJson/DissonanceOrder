@@ -6,6 +6,7 @@ public class Bar : MonoBehaviour
 	public int MaxTones = 3;
 	public double Frequency;
 	public SignaleType Signale;
+    public bool Valid = true;
     public bool Completed = true;
     public float ToneOffset = 0.1f;
 
@@ -30,16 +31,24 @@ public class Bar : MonoBehaviour
     
     public void Update()
     {
-	    Completed = true;
+	    Valid = true;
+        Completed = true;
+        
         foreach(var tone in Hotspots)
 		{
-            Completed &= tone.Valid;
+            Valid &= tone.Valid;
+            Completed &= tone.Completed;
+        }
+        
+        foreach(var tone in Hotspots)
+        {
+            if(Completed) tone.SetGreen(); else tone.SetWhite();
         }
     }
 	
 	public void Play() 
 	{
-        if(Completed) PlayAll();
+        if(Valid) PlayAll();
         else StartCoroutine(PlayDelayed());
 	}
     

@@ -253,9 +253,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tone: {fileID: 1236315842}
-  Frequency: 0
-  Signale: 0
+  Frequency: 220
+  Signale: 2
   Valid: 0
+  Completed: 0
 --- !u!58 &280517262
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -561,9 +562,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tone: {fileID: 1709175916}
-  Frequency: 0
+  Frequency: 440
   Signale: 0
   Valid: 0
+  Completed: 0
 --- !u!58 &769050779
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -638,9 +640,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tone: {fileID: 1431939937}
-  Frequency: 0
-  Signale: 0
+  Frequency: 440
+  Signale: 3
   Valid: 0
+  Completed: 0
 --- !u!58 &771698168
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1341,9 +1344,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tone: {fileID: 406436733}
-  Frequency: 0
+  Frequency: 440
   Signale: 0
   Valid: 0
+  Completed: 0
 --- !u!58 &1497055214
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1498,9 +1502,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tone: {fileID: 31168844}
-  Frequency: 0
-  Signale: 0
+  Frequency: 440
+  Signale: 3
   Valid: 0
+  Completed: 0
 --- !u!58 &1649468422
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1587,9 +1592,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tone: {fileID: 211819831}
-  Frequency: 0
-  Signale: 0
+  Frequency: 440
+  Signale: 3
   Valid: 0
+  Completed: 0
 --- !u!58 &1676757446
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1692,9 +1698,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tone: {fileID: 1509683523}
-  Frequency: 0
+  Frequency: 440
   Signale: 0
   Valid: 0
+  Completed: 0
 --- !u!58 &1713670412
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1820,9 +1827,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tone: {fileID: 1165319014}
-  Frequency: 0
-  Signale: 0
+  Frequency: 220
+  Signale: 2
   Valid: 0
+  Completed: 0
 --- !u!58 &1965943901
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1909,9 +1917,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tone: {fileID: 1399185345}
-  Frequency: 0
-  Signale: 0
+  Frequency: 220
+  Signale: 2
   Valid: 0
+  Completed: 0
 --- !u!58 &2037285646
 CircleCollider2D:
   m_ObjectHideFlags: 0
