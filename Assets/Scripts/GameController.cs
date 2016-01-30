@@ -103,18 +103,6 @@ public class GameController : MonoBehaviour {
         return groups;
     }
 
-    public static float somerule(List<Element> elems) {
-        if (elems.Count == 0)
-            return 1;
-        return UnityEngine.Random.Range(0, 1000) / 1000.0f;
-    }
-
-	public static float squareRule(List<Element> elems) {
-		if (elems.Count != 4)
-			return 1;
-		return MeasurePolygon(elems,new List<float>() {(float)Math.PI/2,(float)Math.PI/2,(float)Math.PI/2,(float)Math.PI/2});
-	}
-
 
 	class ClassicPermutationProblem
 	{
@@ -203,10 +191,33 @@ public class GameController : MonoBehaviour {
 
 
 
+	public static float somerule(List<Element> elems) {
+		if (elems.Count == 0)
+			return 1;
+		return UnityEngine.Random.Range(0, 1000) / 1000.0f;
+	}
+
+	public static float squareRule(List<Element> elems) {
+		if (elems.Count != 4)
+			return 1;
+		return MeasurePolygon(elems,new List<float>() {(float)Math.PI/2,(float)Math.PI/2,(float)Math.PI/2,(float)Math.PI/2});
+	}
+
+	public static float perfectTriangleRule(List<Element> elems) {
+		if (elems.Count != 3)
+			return 1;
+		return MeasurePolygon(elems,new List<float>() {(float)Math.PI/3,(float)Math.PI/3,(float)Math.PI/3});
+	}
+
+	public static float threeInLineRule(List<Element> elems) {
+		if (elems.Count != 3)
+			return 1;
+		return MeasurePolygon(elems,new List<float>() {(float)0,(float)0,(float)Math.PI});
+	}
 
     // Use this for initialization
     void Start () {
-        RuleFn[] rules = new RuleFn[] { somerule,squareRule };
+		RuleFn[] rules = new RuleFn[] { somerule,perfectTriangleRule,threeInLineRule,squareRule };
 
         Hotspot[] hotspots = new Hotspot[] { new CircleHotspot(new Vector2(0, 0), 5) };
 
