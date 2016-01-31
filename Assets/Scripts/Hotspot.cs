@@ -17,11 +17,14 @@ public class Hotspot : MonoBehaviour
 	public bool Completed;
 	public float Tolerance = 3.0f;
 	public float StepScalar = 0.9f;
+    [HideInInspector]
+    public SpriteRenderer HotspotIndicator;
 
-	private float radius;
-	
 	// Use this for initialization
 	void Start () {
+        HotspotIndicator = this.GetComponent<SpriteRenderer>();
+        bool hideHotspots = GameObject.Find("GameUI").GetComponent<GameUI>().HideHotspots;
+        HotspotIndicator.enabled = !hideHotspots;
 	}
 
 	void Update()
@@ -30,6 +33,7 @@ public class Hotspot : MonoBehaviour
 			Tone.GetComponent<AudioSource> ().volume = 1.0f - (1.0f / 23.0f * Vector2.Distance (transform.position, Tone.transform.position));
 			return;
 		}
+
 		var dist = (Vector2.Distance(Tone.transform.position, transform.position))*10;
 		Debug.DrawLine(transform.position,Tone.transform.position,Color.green);
 		if(dist < Tolerance) dist = 0;
