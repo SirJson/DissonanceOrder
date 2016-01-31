@@ -17,6 +17,8 @@ public class Hotspot : MonoBehaviour
 	public bool Completed;
 	public float Tolerance = 3.0f;
 	public float StepScalar = 0.9f;
+
+	private float radius;
 	
 	// Use this for initialization
 	void Start () {
@@ -24,14 +26,17 @@ public class Hotspot : MonoBehaviour
 
 	void Update()
 	{
-		if(toneSource == null) return;
+		if (toneSource == null) {
+			Tone.GetComponent<AudioSource> ().volume = 1.0f - (1.0f / 23.0f * Vector2.Distance (transform.position, Tone.transform.position));
+			return;
+		}
 		var dist = (Vector2.Distance(Tone.transform.position, transform.position))*10;
 		Debug.DrawLine(transform.position,Tone.transform.position,Color.green);
 		if(dist < Tolerance) dist = 0;
 		var step = (dist > 0) ? toneGenerator.BaseFrequency * StepScalar : 0;
 		Valid = tone != null;
 		Completed = dist == 0 && !tone.Dragging;
-		toneGenerator.Frequency = toneGenerator.BaseFrequency + (dist * dist) /*+ step*/;
+		toneGenerator.Frequency = toneGenerator.BaseFrequency + (dist * dist) + step;
 	}
 
 	public void Play(float start = 0) 
@@ -67,6 +72,7 @@ public class Hotspot : MonoBehaviour
 		if(other.gameObject.layer == (int)LayerID.Tone && other.gameObject == Tone)
 		{
 			toneSource = other.gameObject.GetComponent<AudioSource>();
+			toneSource.volume = 1.0f;
 			tone = other.gameObject.GetComponent<Tone>();
 			toneGenerator = other.gameObject.GetComponent<ToneGenerator>();
 			toneGenerator.SetFrequency(Frequency);
@@ -78,7 +84,8 @@ public class Hotspot : MonoBehaviour
 		if(other.gameObject.layer == (int)LayerID.Tone && other.gameObject == Tone)
 		{
 			//toneSource.Stop();
-			toneGenerator.Frequency = Game.DefaultFrequence;
+			toneSource.volume = 1.0f;
+			toneGenerator.SetFrequency(Game.DefaultFrequence);
 			toneGenerator.Type = Game.DefaultSignal;
 			tone = null;
 			toneSource = null;

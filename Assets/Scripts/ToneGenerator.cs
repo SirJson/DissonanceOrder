@@ -24,13 +24,10 @@ public class ToneGenerator : MonoBehaviour
 
 	private double phase;
 	private double sampling_frequency = 48000;
-	private double blah = 0;
-	private System.Random random;
 	private float test;
 
 	void Start()
 	{
-		random = new System.Random();
 		Frequency = Game.DefaultFrequence;
 		Type = Game.DefaultSignal;
 		Frequency = Frequency * Math.Pow(Math.Pow(2.0,1.0/12.0),Note);
