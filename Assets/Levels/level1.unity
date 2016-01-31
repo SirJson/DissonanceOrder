@@ -554,6 +554,10 @@ Prefab:
       propertyPath: m_Volume
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11452222, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: FadeOutSpeed
+      value: 0.06
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
   m_IsPrefabParent: 0
@@ -635,6 +639,10 @@ Prefab:
     - target: {fileID: 8227988, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Volume
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11452222, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: FadeOutSpeed
+      value: 0.06
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
@@ -775,6 +783,10 @@ Prefab:
     - target: {fileID: 188034, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Name
       value: Tone3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11452222, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: FadeOutSpeed
+      value: 0.06
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
