@@ -11,6 +11,8 @@ public class Tone : MonoBehaviour
 	private GameObject glowObj;
 	private SpriteRenderer glow;
 	private AudioFader fader;
+
+	public bool Draggable { set { obj.Draggable = value; } get { return obj.Draggable; } }
 	
 	public bool Dragging
 	{

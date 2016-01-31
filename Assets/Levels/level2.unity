@@ -124,7 +124,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
 --- !u!4 &23934319 stripped
 Transform:
   m_PrefabParentObject: {fileID: 496046, guid: c1ce982fec21243e994b4a46172d710e, type: 2}
@@ -1746,7 +1746,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11422838, guid: 5666b2cdb20ba48c093d959a065e4622, type: 2}
       propertyPath: HideHotspots
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11422838, guid: 5666b2cdb20ba48c093d959a065e4622, type: 2}
       propertyPath: normalizeRadius

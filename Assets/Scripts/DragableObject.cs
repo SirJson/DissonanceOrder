@@ -10,6 +10,7 @@ public class DragableObject : MonoBehaviour
 	private bool dragging;
 	public DragStart OnDragStart;
 	public DragStop OnDragStop; 
+	public bool Draggable = true;
 
 	public bool Dragging
 	{
@@ -29,6 +30,7 @@ public class DragableObject : MonoBehaviour
 	
 	void OnMouseDown()
 	{
+		if(!Draggable) return;
 		OnDragStart();
 		distance = Vector3.Distance(transform.position, Camera.main.transform.position);
 		dragging = true;

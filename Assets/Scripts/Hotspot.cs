@@ -51,7 +51,11 @@ public class Hotspot : MonoBehaviour
 
         Valid = tone != null;
         Completed = dist == 0 && !tone.Dragging;
-	if(Completed) tone.SetGreen(); else tone.SetWhite();
+	if(Completed) 
+	{
+		tone.SetGreen();
+		tone.Draggable = false;
+	}else tone.SetWhite();
 
         // toneGenerator.Frequency = toneGenerator.BaseFrequency + (dist * dist  * normalizeFactor * normalizeFactor) + step;
         toneGenerator.Frequency = toneGenerator.BaseFrequency + (dist * dist ) + step;

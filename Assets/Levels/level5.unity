@@ -1882,7 +1882,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11422838, guid: 5666b2cdb20ba48c093d959a065e4622, type: 2}
       propertyPath: HideHotspots
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5666b2cdb20ba48c093d959a065e4622, type: 2}
