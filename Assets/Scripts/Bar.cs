@@ -100,11 +100,11 @@ public class Bar : MonoBehaviour
 			Valid &= tone.Valid;
 			Completed &= tone.Completed;
 		}
-		
+		/*
 		foreach(var tone in Hotspots)
 		{
 			if(Completed) tone.SetGreen(); else tone.SetWhite();
-		}
+		}*/
 	}
 	
 	public void Play() 
