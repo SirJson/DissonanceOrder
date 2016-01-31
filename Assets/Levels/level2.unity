@@ -991,6 +991,10 @@ Prefab:
       propertyPath: m_Name
       value: Takt (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 11449926, guid: c1ce982fec21243e994b4a46172d710e, type: 2}
+      propertyPath: Tone
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c1ce982fec21243e994b4a46172d710e, type: 2}
   m_IsPrefabParent: 0
@@ -1083,6 +1087,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 140486, guid: 5666b2cdb20ba48c093d959a065e4622, type: 2}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11422838, guid: 5666b2cdb20ba48c093d959a065e4622, type: 2}
+      propertyPath: HideHotspots
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1298,6 +1306,10 @@ Prefab:
     - target: {fileID: 164608, guid: c1ce982fec21243e994b4a46172d710e, type: 2}
       propertyPath: m_Name
       value: Takt (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 11449926, guid: c1ce982fec21243e994b4a46172d710e, type: 2}
+      propertyPath: Tone
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c1ce982fec21243e994b4a46172d710e, type: 2}

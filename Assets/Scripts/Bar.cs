@@ -64,7 +64,6 @@ public static class ToneValueStorage
 public class Bar : MonoBehaviour 
 {
 	public int MaxTones = 3;
-	[HideInInspector]
 	public ToneValue Tone;
 	public SignaleType Signale;
 	public bool Valid = true;
