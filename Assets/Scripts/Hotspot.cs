@@ -42,15 +42,19 @@ public class Hotspot : MonoBehaviour
 
 		var dist = (Vector2.Distance(Tone.transform.position, transform.position))*10;
 		Debug.DrawLine(transform.position,Tone.transform.position,Color.green);
-		if(dist < Tolerance) dist = 0;
-        //      step = (dist > 0) ? toneGenerator.BaseFrequency * StepScalar : 0;
-        double step = (dist > 0) ? 0.9f : 0;
-		Valid = tone != null;
-		Completed = dist == 0 && !tone.Dragging;
 
-        float normalizeFactor = 1.0f/hotspotRadius;
-        toneGenerator.Frequency = toneGenerator.BaseFrequency + (dist * dist * normalizeFactor * normalizeFactor) * step ;
+        float normalizeFactor = gameUI.normalizeRadius/hotspotRadius;
 
+        if(dist < Tolerance) dist = 0;
+        var step = (dist > 0) ? toneGenerator.BaseFrequency * StepScalar : 0;
+        // double step = (dist > 0) ? 0.9f : 0;
+
+        Valid = tone != null;
+        Completed = dist == 0 && !tone.Dragging;
+
+        // toneGenerator.Frequency = toneGenerator.BaseFrequency + (dist * dist  * normalizeFactor * normalizeFactor) + step;
+        toneGenerator.Frequency = toneGenerator.BaseFrequency + (dist * dist ) + step;
+        // toneGenerator.Frequency = toneGenerator.BaseFrequency + (dist * dist * normalizeFactor * normalizeFactor) * step ;
 	}
 
 	public void Play(float start = 0) 
