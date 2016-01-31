@@ -550,6 +550,10 @@ Prefab:
       propertyPath: m_Name
       value: Tone1
       objectReference: {fileID: 0}
+    - target: {fileID: 8227988, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
   m_IsPrefabParent: 0
@@ -627,6 +631,10 @@ Prefab:
     - target: {fileID: 11452436, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: Note
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8227988, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Volume
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
@@ -758,32 +766,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 188034, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Name
       value: Tone3
-      objectReference: {fileID: 0}
-    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7fae6abcf8a044ea89559cb593ff40ae,
-        type: 3}
-    - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11452436, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
-      propertyPath: Note
-      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
