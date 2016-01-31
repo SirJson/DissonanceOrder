@@ -6,9 +6,12 @@ public class Tone : MonoBehaviour
 {
 	public bool BlockStop { get; private set; }
 	public AudioMixerGroup MasterGroup, HighlightedGroup;
+    public float FadeOutSpeed = 0.05f;
 	private DragableObject obj;
 	private GameObject glowObj;
 	private SpriteRenderer glow;
+	private AudioFader fader;
+	
 	public bool Dragging
 	{
 		get { return obj.Dragging; }
@@ -17,6 +20,7 @@ public class Tone : MonoBehaviour
 	// Use this for initialization
 	void Start () {
 	   	obj = GetComponent<DragableObject>();
+		fader = GetComponent<AudioFader>();
 		obj.OnDragStart += OnDragStart;
 		obj.OnDragStop += OnDragStop;
 
@@ -37,6 +41,7 @@ public class Tone : MonoBehaviour
 		var src = GetComponent<AudioSource> ();
 		src.outputAudioMixerGroup.audioMixer.SetFloat ("ToneVolume", -20f);
 		src.outputAudioMixerGroup = HighlightedGroup;
+		src.volume = 1.0f;
 		src.Play();
 		BlockStop = true;
 	}
@@ -55,6 +60,8 @@ public class Tone : MonoBehaviour
 		iTween.PunchScale(gameObject, Vector3.one, 0.5f);
 		//iTween.PunchScale(glowObj, Vector3.one, 0.5f);
 
+		GetComponent<AudioSource>().volume = 1.0f;
+		fader.Fade(FadeOutSpeed);	
 	}
 		
 	public void SetGreen()

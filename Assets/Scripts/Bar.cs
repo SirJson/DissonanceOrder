@@ -121,7 +121,6 @@ public class Bar : MonoBehaviour
 			if(tone == null) continue;
 			tone.Frequency = ToneValueStorage.data[(int)Tone];
 			tone.Signale = Signale;
-			tone.Stop();
 			tone.Play();
 		}
 	}
