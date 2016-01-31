@@ -8,6 +8,8 @@ public class Tone : MonoBehaviour
 	public AudioMixerGroup MasterGroup, HighlightedGroup;
     public float FadeOutSpeed = 0.05f;
 	private DragableObject obj;
+	private GameObject glowObj;
+	private SpriteRenderer glow;
 	private AudioFader fader;
 	
 	public bool Dragging
@@ -21,11 +23,17 @@ public class Tone : MonoBehaviour
 		fader = GetComponent<AudioFader>();
 		obj.OnDragStart += OnDragStart;
 		obj.OnDragStop += OnDragStop;
+
+		glowObj = new GameObject ("glow");
+		glowObj.transform.parent = this.transform;
+		glow = glowObj.AddComponent<SpriteRenderer> ();
+		glow.sprite = GetComponent<SpriteRenderer> ().sprite;
+		glow.GetComponent<Renderer>().enabled = false;
 	}
-	
+		
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 	
 	void OnDragStart()
@@ -50,17 +58,24 @@ public class Tone : MonoBehaviour
 	public void Play()
 	{
 		iTween.PunchScale(gameObject, Vector3.one, 0.5f);
+		//iTween.PunchScale(glowObj, Vector3.one, 0.5f);
+
 		GetComponent<AudioSource>().volume = 1.0f;
 		fader.Fade(FadeOutSpeed);	
 	}
-	
+		
 	public void SetGreen()
 	{
-		GetComponent<SpriteRenderer>().color = Color.green;
+		glow.transform.localPosition = new Vector2 (0, 0);//position = nGetComponent<SpriteRenderer> ().transform.position;
+		glow.transform.rotation = GetComponent<SpriteRenderer> ().transform.rotation;
+		glow.transform.localScale = new Vector2 (1.4f, 1.4f);//GetComponent<SpriteRenderer> ().transform.localScale;
+		glow.color = Color.green;
+		glow.GetComponent<Renderer>().enabled = true;
 	}
 	
 	public void SetWhite()
 	{
+		glow.GetComponent<Renderer>().enabled = false;
 		GetComponent<SpriteRenderer>().color = Color.white;
 	}
 }
