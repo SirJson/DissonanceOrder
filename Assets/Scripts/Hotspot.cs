@@ -4,12 +4,16 @@ using System.Collections.Generic;
 public class Hotspot : MonoBehaviour 
 {
 	public GameObject Tone;
+    [HideInInspector]
 	public double Frequency;
+    [HideInInspector]
 	public SignaleType Signale;
     	private Tone tone;
 	private ToneGenerator toneGenerator;
 	private AudioSource toneSource;
+    [HideInInspector]
     	public bool Valid;
+        [HideInInspector]
         public bool Completed;
 	
 	// Use this for initialization

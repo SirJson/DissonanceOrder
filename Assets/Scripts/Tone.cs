@@ -46,7 +46,7 @@ public class Tone : MonoBehaviour
 
 	public void Play()
 	{
-		iTween.PunchScale(gameObject, Vector3.one, 1.0f);
+		iTween.PunchScale(gameObject, Vector3.one, 4.0f);
 		
 	}
     

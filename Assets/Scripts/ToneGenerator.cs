@@ -4,6 +4,8 @@ using System;  // Needed for Math
 public enum SignaleType 
 {
 	Sin,
+	SinOvertone1,
+	SinOvertone2,
 	Square,
 	Sawtooth,
 	Triangle,
@@ -46,6 +48,31 @@ public class ToneGenerator : MonoBehaviour
 		{
 			phase = phase + t;
 			data[i] = (float)(Gain*Math.Sin(2.0*Math.PI*phase));
+
+			if (channels == 2) data[i + 1] = data[i];
+			if (phase > 32768 * Math.PI) phase = 0;
+		}
+	}
+
+	void GenerateSinOvertone1(ref float[] data, int channels, double t)
+	{
+		for (var i = 0; i < data.Length; i = i + channels)
+		{
+			phase = phase + t;
+			data[i] = (float)(Gain*((Math.Sin(2.0*Math.PI*phase) + Math.Sin(8.0*Math.PI*phase))/2f));
+
+			if (channels == 2) data[i + 1] = data[i];
+			if (phase > 32768 * Math.PI) phase = 0;
+		}
+	}
+
+	void GenerateSinOvertone2(ref float[] data, int channels, double t)
+	{
+		for (var i = 0; i < data.Length; i = i + channels)
+		{
+			phase = phase + t;
+			data[i] = (float)(Gain*(Math.Sin(2.0*Math.PI*phase) + Math.Sin(3.0*Math.PI*phase)/2f));
+
 
 			if (channels == 2) data[i + 1] = data[i];
 			if (phase > 32768 * Math.PI) phase = 0;
@@ -126,6 +153,12 @@ public class ToneGenerator : MonoBehaviour
 			break;
 			case SignaleType.Pulse:
 				GeneratePulse(ref data, channels, t);
+			break;
+			case SignaleType.SinOvertone1:
+				GenerateSinOvertone1(ref data, channels, t);
+			break;
+			case SignaleType.SinOvertone2:
+				GenerateSinOvertone2(ref data, channels, t);
 			break;
 		}
 	}
