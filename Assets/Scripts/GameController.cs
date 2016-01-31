@@ -300,6 +300,6 @@ public class GameController : MonoBehaviour {
             elems.Add(new Element(0, elemGameObjects[i].transform.position));
         }
 
-        //Debug.Log(getGroups(hotspots, rules, elems)[0].distance);
+        Debug.Log(getGroups(hotspots, rules, elems)[0].distance);
 	}
 }
