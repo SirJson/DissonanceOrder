@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 302e62b95fa31410ba66a9450b70615f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Draggable: 1
 --- !u!114 &11445310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -191,7 +192,7 @@ MonoBehaviour:
   Frequency: 220
   BaseFrequency: 0
   Note: 5
-  Gain: 0.01
+  Gain: 0.04
   Noise: 0
   Type: 3
 --- !u!212 &21259358
@@ -230,7 +231,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: Gain
+      value: 0.04
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 188034}

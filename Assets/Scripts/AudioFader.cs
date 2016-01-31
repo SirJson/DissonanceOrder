@@ -4,6 +4,7 @@ using System.Collections;
 public class AudioFader : MonoBehaviour 
 {
 	private AudioSource src;
+	private IEnumerator coroutine;
 
 	// Use this for initialization
 	void Start () 
@@ -27,6 +28,14 @@ public class AudioFader : MonoBehaviour
 
 	public void Fade(float speed)
 	{
-		StartCoroutine(DoFade(speed));
+		coroutine = DoFade(speed);
+		StartCoroutine(coroutine);
+	}
+
+	public void StopFade()
+	{
+		if(coroutine == null) return;
+		StopCoroutine(coroutine);
+		coroutine = null;
 	}
 }

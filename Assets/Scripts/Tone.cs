@@ -43,6 +43,7 @@ public class Tone : MonoBehaviour
 		var src = GetComponent<AudioSource> ();
 		src.outputAudioMixerGroup.audioMixer.SetFloat ("ToneVolume", -20f);
 		src.outputAudioMixerGroup = HighlightedGroup;
+		fader.StopFade();
 		src.volume = 1.0f;
 		src.Play();
 		BlockStop = true;

@@ -167,7 +167,7 @@ Prefab:
     - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 97a61bd94d2004c50a8393a60e5bc4ee,
+      objectReference: {fileID: 21300000, guid: 239a648fd7da246e785863b7d590d224,
         type: 3}
     - target: {fileID: 8227988, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: OutputAudioMixerGroup
@@ -243,7 +243,7 @@ Prefab:
     - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 26d4aea1075714221b0209bc8904bdfa,
+      objectReference: {fileID: 21300000, guid: 477713a776e3d4c3fa4c9a091aebb9bd,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
@@ -813,7 +813,7 @@ Prefab:
     - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 23426d8bc6e654f30891f13150d17a6a,
+      objectReference: {fileID: 21300000, guid: c3c07f852ee624f468ca8af117324033,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
@@ -1065,7 +1065,7 @@ Prefab:
     - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 84ac143215dd04081a3082b7a37a8568,
+      objectReference: {fileID: 21300000, guid: a2933d9575f1a463a94fae4ea3fcdfd5,
         type: 3}
     - target: {fileID: 8227988, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: OutputAudioMixerGroup
@@ -1126,7 +1126,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
 --- !u!1 &766151634
 GameObject:
   m_ObjectHideFlags: 0
@@ -1746,7 +1746,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11422838, guid: 5666b2cdb20ba48c093d959a065e4622, type: 2}
       propertyPath: HideHotspots
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11422838, guid: 5666b2cdb20ba48c093d959a065e4622, type: 2}
       propertyPath: normalizeRadius
@@ -2085,7 +2085,7 @@ Prefab:
     - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c4e9a4e6ab9d74f0bb6dbef1518aee04,
+      objectReference: {fileID: 21300000, guid: 35a3ec4bb10cc46ccafc3f2b0ef5a5b0,
         type: 3}
     - target: {fileID: 8227988, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: OutputAudioMixerGroup
@@ -2262,7 +2262,7 @@ Prefab:
     - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c4e9a4e6ab9d74f0bb6dbef1518aee04,
+      objectReference: {fileID: 21300000, guid: 17da88760f49c4a28b355d4cc81e0200,
         type: 3}
     - target: {fileID: 8227988, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: OutputAudioMixerGroup
@@ -2627,7 +2627,7 @@ Prefab:
     - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c4e9a4e6ab9d74f0bb6dbef1518aee04,
+      objectReference: {fileID: 21300000, guid: 284d563eeda984b8c81bc14e80a32850,
         type: 3}
     - target: {fileID: 8227988, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: OutputAudioMixerGroup
@@ -3425,7 +3425,7 @@ Prefab:
     - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 23426d8bc6e654f30891f13150d17a6a,
+      objectReference: {fileID: 21300000, guid: 452f3771cb21042388130dba6d215676,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}

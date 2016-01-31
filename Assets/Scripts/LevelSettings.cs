@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class LevelSettings : MonoBehaviour 
@@ -12,6 +13,9 @@ public class LevelSettings : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if(Input.GetKeyDown(KeyCode.Escape))
+		{
+			SceneManager.LoadScene("MainMenu");	
+		}
 	}
 }
