@@ -69,7 +69,7 @@ public class Tone : MonoBehaviour
 		glow.transform.localPosition = new Vector2 (0, 0);//position = nGetComponent<SpriteRenderer> ().transform.position;
 		glow.transform.rotation = GetComponent<SpriteRenderer> ().transform.rotation;
 		glow.transform.localScale = new Vector2 (1.4f, 1.4f);//GetComponent<SpriteRenderer> ().transform.localScale;
-		glow.color = Color.green;
+		glow.color = new Color(0,150,0,0.8f);
 		glow.GetComponent<Renderer>().enabled = true;
 	}
 	
