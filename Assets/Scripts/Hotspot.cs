@@ -19,12 +19,18 @@ public class Hotspot : MonoBehaviour
 	public float StepScalar = 0.9f;
     [HideInInspector]
     public SpriteRenderer HotspotIndicator;
+    private float hotspotRadius;
+    private GameUI gameUI;
 
 	// Use this for initialization
 	void Start () {
+
         HotspotIndicator = this.GetComponent<SpriteRenderer>();
-        bool hideHotspots = GameObject.Find("GameUI").GetComponent<GameUI>().HideHotspots;
-        HotspotIndicator.enabled = !hideHotspots;
+        gameUI = GameObject.Find("GameUI").GetComponent<GameUI>();
+
+        HotspotIndicator.enabled = !gameUI.HideHotspots; // Hide all hotspots
+
+        hotspotRadius = transform.localScale.x;
 	}
 
 	void Update()
@@ -37,10 +43,14 @@ public class Hotspot : MonoBehaviour
 		var dist = (Vector2.Distance(Tone.transform.position, transform.position))*10;
 		Debug.DrawLine(transform.position,Tone.transform.position,Color.green);
 		if(dist < Tolerance) dist = 0;
-		var step = (dist > 0) ? toneGenerator.BaseFrequency * StepScalar : 0;
+        //      step = (dist > 0) ? toneGenerator.BaseFrequency * StepScalar : 0;
+        double step = (dist > 0) ? 0.9f : 0;
 		Valid = tone != null;
 		Completed = dist == 0 && !tone.Dragging;
-		toneGenerator.Frequency = toneGenerator.BaseFrequency + (dist * dist) + step;
+
+        float normalizeFactor = 1.0f/hotspotRadius;
+        toneGenerator.Frequency = toneGenerator.BaseFrequency + (dist * dist * normalizeFactor * normalizeFactor) * step ;
+
 	}
 
 	public void Play(float start = 0) 
