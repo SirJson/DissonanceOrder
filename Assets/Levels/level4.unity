@@ -106,11 +106,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 3.62
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.19
+      value: -3.8
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -167,7 +167,7 @@ Prefab:
     - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 239a648fd7da246e785863b7d590d224,
+      objectReference: {fileID: 21300000, guid: 07ee81109820445ad819672d997e5066,
         type: 3}
     - target: {fileID: 8227988, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: OutputAudioMixerGroup
@@ -198,11 +198,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.41
+      value: -0.41
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2
+      value: -2.53
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -243,7 +243,7 @@ Prefab:
     - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 477713a776e3d4c3fa4c9a091aebb9bd,
+      objectReference: {fileID: 21300000, guid: 07ee81109820445ad819672d997e5066,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
@@ -276,7 +276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxTones: 3
-  Tone: 5
+  Tone: 16
   Signale: 0
   Valid: 1
   Completed: 1
@@ -399,7 +399,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 219137224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.74, y: -0.46, z: 0}
+  m_LocalPosition: {x: -1.42, y: -2.89, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2034387605}
@@ -500,7 +500,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 280517260}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.4, z: 0}
+  m_LocalPosition: {x: -0.85, y: -3.13, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 766151636}
@@ -652,6 +652,18 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 0.33333334
       objectReference: {fileID: 0}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.r
+      value: 0.54635984
+      objectReference: {fileID: 0}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.g
+      value: 0.66813517
+      objectReference: {fileID: 0}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.b
+      value: 0.90608424
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
   m_IsPrefabParent: 0
@@ -668,11 +680,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.25
+      value: -0.79
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.52
+      value: -0.13
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -729,7 +741,7 @@ Prefab:
     - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 97a61bd94d2004c50a8393a60e5bc4ee,
+      objectReference: {fileID: 21300000, guid: 07ee81109820445ad819672d997e5066,
         type: 3}
     - target: {fileID: 8227988, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: OutputAudioMixerGroup
@@ -748,6 +760,18 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 0.33333334
       objectReference: {fileID: 0}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.r
+      value: 0.90608424
+      objectReference: {fileID: 0}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.g
+      value: 0.5693043
+      objectReference: {fileID: 0}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.b
+      value: 0.53977543
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
   m_IsPrefabParent: 0
@@ -760,11 +784,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.54
+      value: -2.03
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.25
+      value: -3.14
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -813,8 +837,20 @@ Prefab:
     - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c3c07f852ee624f468ca8af117324033,
+      objectReference: {fileID: 21300000, guid: 07ee81109820445ad819672d997e5066,
         type: 3}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.r
+      value: 0.747914
+      objectReference: {fileID: 0}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.g
+      value: 0.90608424
+      objectReference: {fileID: 0}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.b
+      value: 0.7935714
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
   m_IsPrefabParent: 0
@@ -835,11 +871,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.9
+      value: -2.98
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.36
+      value: -4.15
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -888,7 +924,7 @@ Prefab:
     - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c4e9a4e6ab9d74f0bb6dbef1518aee04,
+      objectReference: {fileID: 21300000, guid: 07ee81109820445ad819672d997e5066,
         type: 3}
     - target: {fileID: 8227988, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: OutputAudioMixerGroup
@@ -935,7 +971,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 518388610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.313, y: -0.399, z: 0}
+  m_LocalPosition: {x: -0.34, y: 2.41, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 177796750}
@@ -1012,11 +1048,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.48
+      value: 5.35
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.07
+      value: -4.05
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1065,7 +1101,7 @@ Prefab:
     - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a2933d9575f1a463a94fae4ea3fcdfd5,
+      objectReference: {fileID: 21300000, guid: 84ac143215dd04081a3082b7a37a8568,
         type: 3}
     - target: {fileID: 8227988, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: OutputAudioMixerGroup
@@ -1114,7 +1150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37cbc45201ff14e7096b30cb5bd6440b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextLevel: level5
+  NextLevel: level6
 --- !u!4 &569090297
 Transform:
   m_ObjectHideFlags: 0
@@ -1155,7 +1191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxTones: 3
-  Tone: 12
+  Tone: 16
   Signale: 0
   Valid: 1
   Completed: 1
@@ -1270,7 +1306,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 771698166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: -1.52, z: 0}
+  m_LocalPosition: {x: -0.99, y: -0.05, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1938261580}
@@ -1587,7 +1623,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 990913415}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.33, y: 0.25, z: 0}
+  m_LocalPosition: {x: -1.41, y: -0.01, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2034387605}
@@ -1840,11 +1876,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 3.97
+      value: 2.12
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.18
+      value: -3.75
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1901,7 +1937,7 @@ Prefab:
     - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 23426d8bc6e654f30891f13150d17a6a,
+      objectReference: {fileID: 21300000, guid: 07ee81109820445ad819672d997e5066,
         type: 3}
     - target: {fileID: 8227988, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: OutputAudioMixerGroup
@@ -1940,7 +1976,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.79
+      value: 0.21
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2012,6 +2048,18 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 0.33333334
       objectReference: {fileID: 0}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.r
+      value: 0.90608424
+      objectReference: {fileID: 0}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.g
+      value: 0.5693043
+      objectReference: {fileID: 0}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.b
+      value: 0.53977543
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
   m_IsPrefabParent: 0
@@ -2024,11 +2072,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.92
+      value: -4.63
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.56
+      value: -1.42
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2085,7 +2133,7 @@ Prefab:
     - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 35a3ec4bb10cc46ccafc3f2b0ef5a5b0,
+      objectReference: {fileID: 21300000, guid: 07ee81109820445ad819672d997e5066,
         type: 3}
     - target: {fileID: 8227988, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: OutputAudioMixerGroup
@@ -2103,6 +2151,18 @@ Prefab:
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalScale.y
       value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.r
+      value: 0.54635984
+      objectReference: {fileID: 0}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.g
+      value: 0.66813517
+      objectReference: {fileID: 0}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.b
+      value: 0.90608424
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
@@ -2195,7 +2255,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1324502526}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.565, y: 0, z: 0}
+  m_LocalPosition: {x: -0.27, y: -0.46, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 177796750}
@@ -2262,7 +2322,7 @@ Prefab:
     - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 17da88760f49c4a28b355d4cc81e0200,
+      objectReference: {fileID: 21300000, guid: 07ee81109820445ad819672d997e5066,
         type: 3}
     - target: {fileID: 8227988, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: OutputAudioMixerGroup
@@ -2280,6 +2340,18 @@ Prefab:
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalScale.y
       value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.r
+      value: 0.54635984
+      objectReference: {fileID: 0}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.g
+      value: 0.66813517
+      objectReference: {fileID: 0}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.b
+      value: 0.90608424
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
@@ -2309,7 +2381,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1364129066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.32, y: 0.29, z: 0}
+  m_LocalPosition: {x: -1.41, y: -1.24, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2034387605}
@@ -2386,11 +2458,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.27
+      value: 2.59
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.03
+      value: -2.32
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2439,7 +2511,7 @@ Prefab:
     - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 26d4aea1075714221b0209bc8904bdfa,
+      objectReference: {fileID: 21300000, guid: 07ee81109820445ad819672d997e5066,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
@@ -2485,7 +2557,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1450674284}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.4, z: 0}
+  m_LocalPosition: {x: -0.29, y: 0.43, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 177796750}
@@ -2574,11 +2646,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.75
+      value: -3.9
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.04
+      value: -2.33
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2627,7 +2699,7 @@ Prefab:
     - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 284d563eeda984b8c81bc14e80a32850,
+      objectReference: {fileID: 21300000, guid: 07ee81109820445ad819672d997e5066,
         type: 3}
     - target: {fileID: 8227988, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: OutputAudioMixerGroup
@@ -2714,7 +2786,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11449926, guid: c1ce982fec21243e994b4a46172d710e, type: 2}
       propertyPath: Tone
-      value: 7
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 421432, guid: c1ce982fec21243e994b4a46172d710e, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2726,19 +2798,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 481644, guid: c1ce982fec21243e994b4a46172d710e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.27
+      value: -1.8
       objectReference: {fileID: 0}
     - target: {fileID: 481644, guid: c1ce982fec21243e994b4a46172d710e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.14
+      value: -0.67
       objectReference: {fileID: 0}
     - target: {fileID: 435864, guid: c1ce982fec21243e994b4a46172d710e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.08
+      value: -0.76
       objectReference: {fileID: 0}
     - target: {fileID: 435864, guid: c1ce982fec21243e994b4a46172d710e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.58
+      value: 0.37
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c1ce982fec21243e994b4a46172d710e, type: 2}
@@ -2831,7 +2903,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1649468420}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.53, y: -1.99, z: 0}
+  m_LocalPosition: {x: -1.91, y: 1.2, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1938261580}
@@ -2924,7 +2996,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1676757444}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4, y: -0.98, z: 0}
+  m_LocalPosition: {x: -0.97, y: 1.18, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1938261580}
@@ -2961,7 +3033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxTones: 3
-  Tone: 11
+  Tone: 19
   Signale: 0
   Valid: 1
   Completed: 1
@@ -3076,7 +3148,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1965943899}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.34, y: -0.58, z: 0}
+  m_LocalPosition: {x: -0.86, y: -2.16, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 766151636}
@@ -3182,7 +3254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxTones: 3
-  Tone: 12
+  Tone: 17
   Signale: 0
   Valid: 1
   Completed: 1
@@ -3297,7 +3369,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2037285644}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.565, y: 0, z: 0}
+  m_LocalPosition: {x: 0.02, y: -3.13, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 766151636}
@@ -3380,11 +3452,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.16
+      value: -2.28
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.17
+      value: -2.59
       objectReference: {fileID: 0}
     - target: {fileID: 451518, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3425,8 +3497,20 @@ Prefab:
     - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 452f3771cb21042388130dba6d215676,
+      objectReference: {fileID: 21300000, guid: 07ee81109820445ad819672d997e5066,
         type: 3}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.r
+      value: 0.54635984
+      objectReference: {fileID: 0}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.g
+      value: 0.66813517
+      objectReference: {fileID: 0}
+    - target: {fileID: 21259358, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
+      propertyPath: m_Color.b
+      value: 0.90608424
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74e9e58e3e4cf4a63bb0566b4db4242e, type: 2}
   m_IsPrefabParent: 0
