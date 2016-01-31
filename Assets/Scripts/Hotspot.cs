@@ -17,9 +17,14 @@ public class Hotspot : MonoBehaviour
 	public bool Completed;
 	public float Tolerance = 3.0f;
 	public float StepScalar = 0.9f;
-	
+    [HideInInspector]
+    public SpriteRenderer HotspotIndicator;
+
 	// Use this for initialization
 	void Start () {
+        HotspotIndicator = this.GetComponent<SpriteRenderer>();
+        bool hideHotspots = GameObject.Find("GameUI").GetComponent<GameUI>().HideHotspots;
+        HotspotIndicator.enabled = !hideHotspots;
 	}
 
 	void Update()

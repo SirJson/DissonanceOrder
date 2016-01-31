@@ -4,6 +4,7 @@ using System.Collections;
 public class GameUI : MonoBehaviour 
 {
 	public GameObject NextLevelButton;
+    public bool HideHotspots;
 
 	// Use this for initialization
 	void Start () {
